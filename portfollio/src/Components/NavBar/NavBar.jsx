@@ -1,14 +1,23 @@
 import React from 'react';
 import logo from "../../../public/Logo.png"
+import { CiMenuFries } from "react-icons/ci";
 
 const NavBar = () => {
     return (
-      <div className="flex items-center justify-between ">
+      <div className="flex items-center justify-between">
         <div className="flex items-center">
-          <img src={logo} className="w-28 h-28  " alt="" />
+          <img src={logo} className="w-24 lg:w-28 h-28  " alt="" />
           <p className="text-white text-xl">mehedytouhidurzaman@gmail.com</p>
         </div>
-        <div>
+
+        <div className="text-white font-bold text-2xl inline-block lg:hidden ">
+          <button className='cursor-pointer'>
+            <CiMenuFries></CiMenuFries>
+          </button>
+        </div>
+
+        {/* desktop navbar */}
+        <div className="hidden lg:inline-block">
           <ul className="flex space-x-3 text-white text-lg items-center">
             <li>
               <a

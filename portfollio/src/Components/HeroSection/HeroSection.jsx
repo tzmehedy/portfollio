@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 
+
 const HeroSection = () => {
     return (
       <div className="bg-gradient-to-r from-[#0F0715]  to-[#281745]">
@@ -12,7 +13,7 @@ const HeroSection = () => {
           <NavBar></NavBar>
         </div>
 
-        <div className=" container mx-auto p-6 flex justify-between items-center gap-x-36 relative">
+        <div className=" container mx-auto p-6  flex flex-col lg:flex-row justify-between items-center md:gap-x-36 relative space-y-10">
           <div className="md:w-1/2 space-y-5 ">
             <h3 className="text-[#DDDDDD] text-4xl font-bold">
               I&apos;m Md Touhidur Zaman,
@@ -63,14 +64,14 @@ const HeroSection = () => {
           </div>
           <div className="md:w-1/2 ">
             <img
-              className="transition-all duration-700 ease-in-out hover:rotate-6 w-full h-[600px] border-4 border-[#8750F7] border-dashed p-16 rounded-xl shadow-2xl bg-[#0C1013]"
+              className="transition-all duration-700 ease-in-out hover:rotate-6 w-full h-[300px] lg:h-[600px]  border-4 border-[#8750F7] border-dashed p-16 rounded-xl shadow-2xl bg-[#0C1013]"
               src={heroImg1}
               alt=""
             />
           </div>
         </div>
 
-        <div className="flex justify-center gap-20 py-10">
+        <div className="flex flex-col items-center lg:flex-row justify-center gap-20 py-10">
           <div className="flex items-center text-[#DDDDDD] font-bold space-x-5">
             <div>
               <h1 className="text-9xl">02</h1>
