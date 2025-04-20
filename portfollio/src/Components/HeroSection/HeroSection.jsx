@@ -4,7 +4,7 @@ import heroImg1 from "../../assets/images/HeroImage1.png"
 import { FiDownload } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
-
+import CountUp from "react-countup";
 
 const HeroSection = () => {
     return (
@@ -64,7 +64,7 @@ const HeroSection = () => {
           </div>
           <div className="md:w-1/2 ">
             <img
-              className="transition-all duration-700 ease-in-out hover:rotate-6 w-full h-[300px] lg:h-[600px]  border-4 border-[#8750F7] border-dashed p-16 rounded-xl shadow-2xl bg-[#0C1013]"
+              className="transition-all duration-700 ease-linear hover:rotate-6 w-full h-full scale-75  border-4 border-[#8750F7] border-dashed p-16 rounded-4xl shadow-2xl shadow-indigo-900 bg-[#0C1013]"
               src={heroImg1}
               alt=""
             />
@@ -73,9 +73,13 @@ const HeroSection = () => {
 
         <div className="flex flex-col items-center lg:flex-row justify-center gap-20 py-10">
           <div className="flex items-center text-[#DDDDDD] font-bold space-x-5">
-            <div>
-              <h1 className="text-9xl">02</h1>
-            </div>
+            <CountUp start={0} end={2}>
+              {({ countUpRef }) => (
+                <div>
+                  <span className="text-9xl" ref={countUpRef} />
+                </div>
+              )}
+            </CountUp>
             <div>
               <p className="text-2xl">
                 Years of <br /> Experience
@@ -83,9 +87,14 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex items-center text-[#DDDDDD] font-bold space-x-5">
-            <div>
-              <h1 className="text-9xl">60+</h1>
-            </div>
+            <CountUp start={0} end={60}>
+              {({ countUpRef }) => (
+                <div className='flex justify-center  text-5xl'>
+                  <h1 ref={countUpRef} className='text-9xl'></h1>
+                  +
+                </div>
+              )}
+            </CountUp>
             <div>
               <p className="text-2xl">
                 Projects <br /> Completed

@@ -3,7 +3,7 @@ import { IoMdArrowDown } from "react-icons/io";
 
 const Services = () => {
     return (
-      <div id='services' className="bg-[#050709] p-10">
+      <div id='services' className="bg-[#050709] py-20">
         <div className="flex flex-col items-center justify-center space-y-5">
           <h1 className="bg-gradient-to-r from-[#8A54F7] to-[#FBF9FF] bg-clip-text text-transparent text-6xl font-bold">
             My Quality Services
@@ -16,7 +16,7 @@ const Services = () => {
         </div>
 
         <div className="container mx-auto my-10 ">
-          <div className="flex flex-col lg:flex-row justify-between items-center border-b-2 border-[#8A55F7] px-3 py-10 group text-[#8A55F7] transition-all duration-500 hover:bg-[#8A55F7] hover:text-[#DDDDDD] rounded-lg">
+          <div className="flex flex-col lg:flex-row justify-between items-center border-b-2 border-[#8A55F7] px-3 py-10 group text-[#8A55F7] transition-all duration-700 hover:bg-[#8A55F7] hover:text-[#DDDDDD] rounded-lg">
             <p className="text-3xl font-bold">01</p>
             <h1 className="text-4xl font-bold">Web Development</h1>
             <p className="font-bold text-xl">
