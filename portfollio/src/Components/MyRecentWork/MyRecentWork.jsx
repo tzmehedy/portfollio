@@ -9,7 +9,7 @@ const MyRecentWork = () => {
     const [open, setOpen] = useState(0)
     console.log(open)
     return (
-      <div className="bg-[#0F0715] py-10">
+      <div id='works' className="bg-[#0F0715] py-10">
         <div className="flex flex-col items-center justify-center space-y-5 ">
           <h1 className="bg-gradient-to-r from-[#8A54F7] to-[#FBF9FF] bg-clip-text text-transparent text-6xl font-bold">
             My Recent Work

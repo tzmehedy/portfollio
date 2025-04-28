@@ -5,11 +5,11 @@ import { FiDownload } from "react-icons/fi";
 import { FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import CountUp from "react-countup";
-import heroimg2 from "../../assets/images/IMG_20230114_114126-removebg-preview.png"
+import heroimg2 from "../../assets/images/DSC05189-removebg-preview.png"
 
 const HeroSection = () => {
     return (
-      <div className="bg-gradient-to-r from-[#0F0715]  to-[#281745]">
+      <div id='home' className="bg-gradient-to-r from-[#0F0715]  to-[#281745]">
         <div className="container mx-auto">
           <NavBar></NavBar>
         </div>
@@ -63,8 +63,12 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2  transition-all duration-700 ease-linear hover:rotate-6 w-full h-full   border-4 border-[#8750F7] p-5  rounded-4xl shadow-2xl shadow-indigo-900 bg-[#0C1013]">
-            <img className="rounded-4xl scale-95 hover:scale-75 transition-all duration-500" src={heroimg2} alt="" />
+          <div className="md:w-1/2  transition-all duration-700 ease-linear hover:rotate-6 w-[50%] h-[50%]  border-4 border-[#8750F7] flex items-center justify-center  rounded-full shadow-2xl shadow-indigo-900 bg-[#0C1013]">
+            <img
+              className="rounded-full bg-[#8750F7] scale-95 hover:scale-75 transition-all duration-500 w-full h-full"
+              src={heroimg2}
+              alt=""
+            />
           </div>
         </div>
 

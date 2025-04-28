@@ -6,12 +6,14 @@ const NavBar = () => {
     return (
       <div className="flex items-center justify-between">
         <div className="flex items-center">
-          <img src={logo} className="w-24 lg:w-28 h-28  " alt="" />
+          <a href="/">
+            <img src={logo} className="w-24 lg:w-28 h-28  " alt="" />
+          </a>
           <p className="text-white text-xl">mehedytouhidurzaman@gmail.com</p>
         </div>
 
         <div className="text-white font-bold text-2xl inline-block lg:hidden ">
-          <button className='cursor-pointer'>
+          <button className="cursor-pointer">
             <CiMenuFries></CiMenuFries>
           </button>
         </div>
@@ -41,7 +43,8 @@ const NavBar = () => {
               <a
                 className="relative px-0 py-2  after:absolute
               after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-[#6B3EC6] after:transition-x after:duration-300 hover:after:w-full"
-                href="#resume"
+                href="https://drive.google.com/file/d/1rHxLUXTKJ37GX95Sdm2lZCjtGMhcfQyb/view?usp=sharing"
+                target='_blank'
               >
                 Resume
               </a>
@@ -53,15 +56,6 @@ const NavBar = () => {
                 href="#skills"
               >
                 Skills
-              </a>
-            </li>
-            <li>
-              <a
-                className="relative px-0 py-2  after:absolute
-              after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-[#6B3EC6] after:transition-x after:duration-300 hover:after:w-full"
-                href="#testimonials"
-              >
-                Testimonials
               </a>
             </li>
             <li>

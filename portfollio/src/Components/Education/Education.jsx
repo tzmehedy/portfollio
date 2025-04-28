@@ -5,7 +5,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 const Education = () => {
   return (
     <div className="bg-[#050709] py-20">
-      <div className="flex flex-col lg:flex-row justify-evenly container mx-auto space-x-20">
+      <div className="flex flex-col lg:flex-row justify-evenly container mx-auto lg:space-x-20">
         <div className="space-y-5">
           <div className="flex justify-between items-center space-x-10 bg-gradient-to-r from-[#8A54F7] to-[#FBF9FF] bg-clip-text text-transparent  text-6xl font-bold">
             <SlBadge className="text-[#8A54F7]"></SlBadge>
